@@ -31,3 +31,75 @@ p.more {
 }
 
 /* Your code here */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 50px;
+}
+
+
+.page-container {
+  display: block;
+  position: relative;
+}
+
+#leftbar {
+  float: left;
+
+}
+
+#center {
+  float: left;
+  margin: 2%;
+  padding: 0;
+  width: 62%;
+}
+
+.community {
+  float: left;
+  width: 33%;
+}
+
+.housing {
+  float: left;
+  width: 37%;
+  padding: 0 4%;
+}
+
+.job {
+  float: left;
+  padding: 0;
+  width: 22%;
+}
+
+#rightbar {
+  float: left;
+  width: 11%;
+  vertical-align: top;
+  text-align: center;
+  font-size: 70%;
+  padding: 5px 0;
+}
+
+footer .clfooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ align-items: center;
+ padding: 0; /* Remove default padding */
+ list-style: none;
+}
+footer .clfooter li {
+  margin: 0 10px;  /* add some space between the items */
+}
